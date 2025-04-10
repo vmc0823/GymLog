@@ -27,6 +27,17 @@ public class GymLog {
         date = LocalDateTime.now();
     }
 
+    @Override
+    public String toString() {
+        return "GymLog{" +
+                "id=" + id +
+                ", exercise='" + exercise + '\'' +
+                ", weight=" + weight +
+                ", reps=" + reps +
+                ", date=" + date +
+                '}';
+    }
+
     //equals and hashcode
     @Override
     public boolean equals(Object o) {
